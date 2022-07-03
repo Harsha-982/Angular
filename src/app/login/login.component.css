@@ -1,0 +1,16 @@
+.row{
+    margin-top: 30px;
+    /* background-image: url(../images/); */
+}
+input{
+    border: 1px solid blue;
+    color: blue;
+   
+}
+input:not([type="radio"]){
+    height: 30px;
+}
+
+input[name="gender"]{
+    margin: 5px;
+}

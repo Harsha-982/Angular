@@ -1,0 +1,17 @@
+<div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">PizzaHut
+            <!-- <img src=""> -->
+        </a>
+        <div class="collapse navbar-collapse"></div>
+        <div *ngIf="!loggedIn" class="d-flex justify-content-end">
+            <a routerLink="" class="btn btn-info mb-1">Login</a>
+            <a routerLink="register" class="btn btn-info mb-1">Register</a>
+        </div>
+
+        <div class="d-flex justify-content-end" *ngIf="loggedIn">
+            <a routerLink="logout" class="btn btn-info mb-1">Logout</a>
+            <a routerLink="profile" class="btn btn-info mb-1">Profile</a>
+        </div>
+    </nav>
+</div>
